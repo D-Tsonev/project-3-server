@@ -54,12 +54,6 @@ async function seedDatabase() {
     }
     await inventoryItem.create(abusItem)
 
-    // // ? Grab pokemon to comment on..
-    // const pokemonToCommentOn = pokemon[0]
-    // // ? Add the comment to the pokemon
-    // pokemonToCommentOn.comments.push(myComment)
-    // // ? Saves the pokemon
-    // const savedPokemon = await pokemonToCommentOn.save()
 
     // ? seeding the recipes    
     const recipe = await Recipe.create(recipeData)
