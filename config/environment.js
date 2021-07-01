@@ -1,6 +1,8 @@
 
-// our database URL
-export const dbURL = 'mongodb://localhost/itemdb'
+import dotenv from 'dotenv'
+dotenv.config()
 
-// Secret string for JWT
-export const secret = 'abubakarjonasdimitar'
+export const dbURI =
+  process.env.DB_URI || 'mongodb://localhost/itemdb'
+export const port = process.env.PORT || 4000
+export const secret = process.env.SECRET || 'abubakarjonasdimitar'
